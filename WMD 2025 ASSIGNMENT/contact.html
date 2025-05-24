@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - La Belle Mani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>La Belle Mani</h1>
+                <p>Luxury Nail Care & Spa</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1596704017037-8b2b47baf4a9');">
+        <div class="hero-content">
+            <h2>Contact Us</h2>
+            <p>Book your appointment or ask us anything</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Beauty Street, Glamour City, GC 12345</p>
+                    
+                    <h3>Hours</h3>
+                    <p><i class="far fa-clock"></i> Monday-Friday: 9am-7pm</p>
+                    <p><i class="far fa-clock"></i> Saturday: 10am-6pm</p>
+                    <p><i class="far fa-clock"></i> Sunday: 11am-5pm</p>
+                    
+                    <h3>Call Us</h3>
+                    <p><i class="fas fa-phone"></i> 76405677</p>
+                    
+                    <h3>Email Us</h3>
+                    <p><i class="fas fa-envelope"></i> info@labellemani.com</p>
+                    
+                    <div class="social-links" style="margin-top: 40px;">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="manicure">Classic Manicure</option>
+                                <option value="gel">Gel Manicure</option>
+                                <option value="pedicure">Spa Pedicure</option>
+                                <option value="luxury">Luxury Treatment</option>
+                                <option value="other">Other Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Preferred Date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" placeholder="Preferred Time" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests or Questions"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>La Belle Mani</h3>
+                    <p>Luxury Nail Care & Spa</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 La Belle Mani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+
+        // Form submission handling
+        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your appointment request! We will contact you shortly to confirm your booking.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
